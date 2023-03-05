@@ -1,0 +1,71 @@
+/*Melakukan pengaturan margin, padding, box, dan menentukan font*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Melakukan berbagai pengaturan seperti tinggi, display, konten dan items untuk body*/
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Melakukan pengaturan teks untuk bagian div*/
+div {
+    text-align: center;
+}
+
+/*Melakukan pengaturan spacingn dan gaya teks untuk h2*/
+div h2 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/*Melakukan pengaturan margin unutk hr*/
+div hr {
+    margin: 14px 0;
+}
+
+/*Melakukan pengaturan untuk input seperti jenis input, margin, padding, tinggi, dan size dari font*/
+div input[type=number] {
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/*Melakukan pengaturan untuk input yang hanya dapat dibaca tidak dapat diedit*/
+div input[type=number]:read-only {
+    border: 1px solid #000;
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*Melakukan pengaturan untuk button*/
+div button {
+    margin: 0 4px;
+    padding: 6px 0;
+    width: 62px;
+    border: 1px solid #999;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Melakukan pengaturan untuk button saat cursor mengenai button*/
+div button:hover {
+    background-color: #ccc;
+}
+
+/*Melakukan pengaturan untuk button saat cursor melakukan klik*/
+div button:focus {
+    outline: 2px solid #333;
+}
